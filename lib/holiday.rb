@@ -51,7 +51,6 @@ end
       puts "  #{attribute[0].upcase + attribute[1..-1]}: #{data.join(", ")}"
   end
 end
-end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
