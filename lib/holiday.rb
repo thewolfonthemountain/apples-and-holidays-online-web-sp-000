@@ -49,8 +49,7 @@ holiday_hash.each do |season,holiday|
     word.capitalize!
     season.join(" ")
   end
-  binding.pry
-  puts "#{season.join(" ")}:"
+  puts "#{season}:"
   holiday.each do |attribute,data|
       puts "  #{attribute[0].upcase + attribute[1..-1]}: #{data.join(", ")}"
   end
