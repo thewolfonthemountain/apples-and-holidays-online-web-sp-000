@@ -48,7 +48,7 @@ holiday_hash.each do |season,holiday|
   season.to_s.split('_').each do |word|
     word.capitalize!
   end
-  pry.binding
+  binding.pry
   puts "#{season.join(" ")}:"
   holiday.each do |attribute,data|
       puts "  #{attribute[0].upcase + attribute[1..-1]}: #{data.join(", ")}"
