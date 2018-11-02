@@ -48,6 +48,7 @@ holiday_hash.each do |season,holiday|
   season.to_s.split('_').each do |word|
     word.capitalize!
   end
+end
   binding.pry
   puts "#{season.join(" ")}:"
   holiday.each do |attribute,data|
