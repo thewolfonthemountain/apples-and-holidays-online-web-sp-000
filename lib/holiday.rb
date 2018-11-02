@@ -46,7 +46,7 @@ end
 def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |season,holiday|
   if season.include?("_") then
-  underscore = season.index("_")-1 
+  underscore = season.index("_")-1
   new_word = season.index("_")+1
   puts "#{season[0].upcast + season[1..underscore] + " " + season[new_word..-1]}"
 else
