@@ -45,12 +45,7 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |season,holiday|
-  if season.to_s.include?("_") then
-  underscore = season.index("_")-1
-  new_word = season.index("_")+1
-  puts "#{season[0].upcast + season[1..underscore] + " " + season[new_word..-1]}"
-else
-  puts "#{season[0].upcase + season[1..-1]}:"
+  puts "#{season.to_s.capitalize}:"
 end
   holiday.each do |attribute,data|
       puts "  #{attribute[0].upcase + attribute[1..-1]}: #{data.join(", ")}"
