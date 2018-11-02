@@ -49,6 +49,7 @@ holiday_hash.each do |season,holiday|
   season_array.each do |word|
     word.capitalize!
   end
+  binding.pry
   season_fixed = season_array.join(" ")
   puts "#{season_fixed}:"
   holiday.each do |attribute,data|
